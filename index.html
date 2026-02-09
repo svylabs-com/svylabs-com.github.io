@@ -1,13 +1,63 @@
-SVY Labs BV is a software research and development firm based in the Netherlands experimenting with Blockchain technology to bring decentralized products to consumers.<br/><br/>
+<!DOCTYPE html>
+<html lang="en">
 
-<b>Focus Areas</b><br/>
-<ul>
-  <li>Privacy preserving applications</li>
-  <li>Decentralized Identity</li>
-  <li>Cross-chain interoperability for Bitcoin</li>
-</ul>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SVY Labs | Smart Contract & DeFi Development</title>
+  <meta name="description"
+    content="SVY Labs makes building smart contracts and DeFi protocols easier with advanced simulation and validation tools.">
+  <link rel="stylesheet" href="index.css">
+</head>
 
-Contact<br/>
-<b>e-mail</b>: <i>sg@svylabs.com</i><br/>
-<a href="https://github.com/svylabs">Github</a>
+<body>
 
+  <main class="container">
+    <section class="hero">
+      <h1>SVY Labs</h1>
+      <p>We make building smart contracts and DeFi easier.</p>
+    </section>
+
+    <section class="bento-grid">
+      <a href="https://eigenarc.com" class="bento-card large eigenarc" target="_blank" id="card-eigenarc">
+        <div class="card-content">
+          <h3>Eigenarc</h3>
+          <p>Design and visualization tool for protocols.</p>
+        </div>
+      </a>
+
+      <a href="https://ilumina.dev" class="bento-card large ilumina" target="_blank" id="card-ilumina">
+        <div class="card-content">
+          <h3>Ilumina</h3>
+          <p>Simulation and testing tool for protocols.</p>
+        </div>
+      </a>
+
+      <!-- Additional bento items can be added here for a richer grid -->
+    </section>
+  </main>
+
+  <footer>
+    <div class="container footer-content">
+      <a href="mailto:sg@svylabs.com" class="email-link">sg@svylabs.com</a>
+      <a href="https://github.com/svylabs" target="_blank" class="github-btn">Follow on Github</a>
+      <p class="copyright">&copy; 2026 SVY Labs. Based in the Netherlands.</p>
+    </div>
+  </footer>
+
+  <script>
+    // Interactive mouse glow effect for bento cards
+    document.querySelectorAll('.bento-card').forEach(card => {
+      card.onmousemove = e => {
+        const rect = card.getBoundingClientRect();
+        const x = e.clientX - rect.left;
+        const y = e.clientY - rect.top;
+
+        card.style.setProperty('--mouse-x', `${x}px`);
+        card.style.setProperty('--mouse-y', `${y}px`);
+      };
+    });
+  </script>
+</body>
+
+</html>
